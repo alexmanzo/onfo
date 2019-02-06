@@ -1,0 +1,364 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafc;
+  font-family: Lato, sans-serif;
+  display: grid;
+  grid-template-rows: 75px 0;
+}
+
+/* ===== Header Styling ===== */
+header {
+  background-color: white;
+  height: 75px;
+  border-bottom: 1px solid;
+  border-color: rgba(142, 143, 156, 0.25);
+  position: relative;
+}
+
+/* Menu Icon Styling */
+
+.menu-icon {
+  width: 25px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.menu-icon hr {
+  float: left;
+  margin: 3px;
+  border: 1px solid #8e8f9c;
+}
+
+.menu-icon--line1 {
+  width: 90%;
+}
+.menu-icon--line2 {
+  width: 70%;
+}
+
+.menu-icon--line3 {
+  width: 50%;
+}
+
+/* Logo/Header Styling */
+
+.logo-header {
+  position: absolute;
+  top: 15px;
+  left: 45%;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #414141;
+  font-weight: medium;
+}
+
+.logo-header--logo {
+  position: absolute;
+  left: -40px;
+  bottom: 2px;
+  border: 5px solid #5d86f3;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+}
+
+.logo-header--logo hr {
+  border: 2px solid #5d86f3;
+  position: absolute;
+}
+
+.logo-header--logo--line1 {
+  top: -6px;
+  left: -2px;
+  width: 9px;
+  transform: skew(-40deg);
+}
+
+.logo-header--logo--line2 {
+  left: -4px;
+  width: 7px;
+  transform: skew(-30deg);
+}
+
+/* Notification Styling */
+
+.notification {
+  padding-right: 10px;
+  position: absolute;
+  top: 3px;
+  right: 200px;
+}
+
+.notification i.far {
+  color: #8e8f9c;
+  margin-top: 25px;
+}
+
+.notification hr {
+  border: none;
+  border-left: 1px solid rgba(142, 143, 156, 0.25);
+  height: 55px;
+  float: right;
+  margin-left: 35px;
+}
+
+/* Profile Styling */
+
+.profile {
+  position: absolute;
+  top: 12px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  color: #414141;
+}
+
+.profile img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* ===== Side Nav Styling ===== */
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  border-right: 1px solid;
+  border-color: rgba(142, 143, 156, 0.25);
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar ul {
+  position: absolute;
+  top: 40px;
+  padding-inline-start: 0px;
+}
+
+.sidebar li {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.sidebar i.fas {
+  color: #8e8f9c;
+}
+
+/* Would be equivalent to hover & active  styling */
+.sidebar .home i.fas {
+  color: #5d86f3;
+  border-right: 3px solid #5d86f3;
+  margin-left: 28px;
+  padding-right: 28px;
+  left: 10px;
+}
+/* ===== Dashboard Content ===== */
+
+/*  Balance Card  */
+.balance-card {
+  margin: 50px auto;
+  width: 440px;
+  height: 525px;
+  position: relative;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 10px 10px 200px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling */
+.balance-card h2 {
+  text-align: center;
+  position: absolute;
+  left: 175px;
+  top: 10%;
+}
+
+.balance-card h3 {
+  text-align: center;
+  position: absolute;
+  font-size: 14px;
+  color: #9c9da8;
+  left: 180px;
+  top: 35%;
+}
+
+.balance-card h4 {
+  text-align: center;
+  position: absolute;
+  left: 150px;
+  color: #4d9aff;
+  font-weight: 900;
+  font-size: 36px;
+  top: 33%;
+}
+
+/* Request & Sent Circles */
+.balance-card--request,
+.balance-card--sent {
+  position: absolute;
+  top: 70%;
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+}
+
+.balance-card--request {
+  left: 80px;
+  background-color: #4d9aff;
+}
+
+.balance-card--sent {
+  left: 260px;
+  background-color: #1ecf53;
+}
+
+.balance-card--request p,
+.balance-card--sent p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 65px;
+}
+
+.balance-card--request i.fas,
+.balance-card--sent i.fas {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+}
+
+.balance-card--request i.fas {
+  transform: rotate(-45deg);
+}
+
+/* Style Elements */
+
+.balance-card--corner-square {
+    fill: #4d9aff;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+      left: -10px;
+  }
+
+
+.balance-card--corner-circle {
+  display: block;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,1), inset -0.5em -0.5em 0.5em 0 rgba(225, 225, 225, 1), inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,1);
+  position: absolute;
+    left: 18px;
+    top: 24px;
+    
+}
+
+
+hr.balance-card--line-gradient {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  border: 0;
+  overflow: hidden;
+  transform: rotate(120deg);
+  top: 300px;
+  left: -150px;
+}
+
+hr.balance-card--line-gradient:before {
+  content: '';
+  width: 80%;
+  height: 50%;
+  top: 15%;
+  left: 10%;
+  margin: 0 auto;
+  position: absolute;
+  border-top-left-radius: 250px 100px;
+  border-top-right-radius: 250px 100px;
+  box-shadow: 0px 0px 17px 2px rgba(93, 134, 243, 0.5);
+}
+
+hr.balance-card--line-gradient:after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 250px 100px;
+  border-top-right-radius: 250px 100px;
+    background: #fff;;
+}
+
+/* Refer Card */
+.refer-card {
+  margin: 50px auto;
+  width: 440px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  border-radius: 75px;
+  box-shadow: 10px 10px 200px 10px rgba(0, 0, 0, 0.2);
+}
+
+.refer-card h2 {
+  position: absolute;
+  left: 35px;
+}
+
+.refer-card h3 {
+  font-size: 14px;
+  color: #9c9da8;
+  position: absolute;
+  left: 35px;
+  top: 55px;
+}
+
+.refer-card i {
+  margin-left: 10px;
+}
+
+.refer-card--progress-bar {
+  width: 215px;
+  position: absolute;
+  left: 35px;
+  top: 50px;
+}
+
+.refer-card--progress-bar--progress {
+  position: absolute;
+  border: 2px solid #4d9aff;
+  border-radius: 2px;
+  z-index: 1;
+  width: 30%;
+}
+
+.refer-card--progress-bar--togo {
+  position: relative;
+  border: 2px solid #e0e0e0;
+  border-radius: 2px;
+} 
+
+.refer-card img {
+  position: absolute;
+  right: -12px;
+  top: 5px;
+}

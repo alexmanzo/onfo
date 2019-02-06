@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>Onfo</title>
+  </head>
+  <body>
+    <header>
+      <div id="menu-icon" class="menu-icon">
+        <hr class="menu-icon--line1" />
+        <hr class="menu-icon--line2" />
+        <hr class="menu-icon--line3" />
+      </div>
+      <div id="logo-header" class="logo-header">
+        <span class="logo-header--logo">
+          <hr class="logo-header--logo--line1" />
+          <hr class="logo-header--logo--line2" />
+        </span>
+        <h1>onfo</h1>
+      </div>
+      <div id="notification" class="notification">
+        <i class="far fa-bell"></i>
+        <hr />
+      </div>
+      <div id="profile" class="profile">
+        <img src="alex_manzo.jpg" alt="Alex Manzo profile" />
+        <p>Alex Manzo</p>
+      </div>
+    </header>
+    <nav id="sidebar" class="sidebar">
+      <ul>
+        <li class="home"><i class="fas fa-home"></i></li>
+        <li class="history"><i class="fas fa-history"></i></li>
+        <li class="contacts"><i class="fas fa-address-book"></i></li>
+        <li class="sharing"><i class="fas fa-share-alt"></i></li>
+        <li class="settings"><i class="fas fa-cog"></i></li>
+      </ul>
+    </nav>
+    <div id="dashboard">
+      <div id="balance-card" class="balance-card">
+          <h2>Hi 👋<br>John Doe</h2>
+          <h3>Your balance</h3>
+          <h4>$782.77</h4>
+          <div class="balance-card--request"><i class="fas fa-arrow-left"></i><p>Request</p></div>
+          <div class="balance-card--sent"><i class="fas fa-paper-plane"></i><p>Send</p></div>
+        <svg
+          id="blue-corner"
+          data-name="blue-corner"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 204.92 251"
+          class="balance-card--corner-square"
+        >
+          <path
+            class="cls-1"
+            d="M374.5,162.5"
+            transform="translate(-100.5 -76.5)"
+          />
+          <path
+            class="cls-2"
+            d="M170.5,76.5h134c6.15,27.45-18.78,49.28-72,66-68-19-114,57-55,109,2,33.74-25.5,58.53-77,76v-194C113.76,100.77,136.54,81,170.5,76.5Z"
+            transform="translate(-100.5 -76.5)"
+          />
+        </svg>
+            <div class="balance-card--corner-circle"></div>
+            <div class="balance-card--line-cover"></div>
+            <hr class="balance-card--line-gradient">
+      </div>
+      <div id="refer-card" class="refer-card">
+        <h2>Refer a Friend<i class="fas fa-angle-right"></i></h2>
+        <h3>Referred: 10 Earned: 100 onfo</h3>
+        <div class="refer-card--progress-bar">
+          <hr class="refer-card--progress-bar--progress">
+          <hr class="refer-card--progress-bar--togo">
+        </div>
+        <img src="refer-img.png" alt="illustration of friends on phones" />
+      </div>
+    </div>
+  </body>
+</html>
